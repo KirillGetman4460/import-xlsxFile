@@ -30,7 +30,7 @@ const readExcelFile = (filePath) =>{ // функция для чтения Excel
 
 readExcelFile('./FLProductMasterfile.xlsx')
     .then(res => res.map(item => {
-        //db.push(createUser(item))
+        db.push(createUser(item))
     }))
     .then(() =>{
         console.log(db);
